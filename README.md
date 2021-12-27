@@ -1,1 +1,0 @@
-"algorithm - informtive document provided" 
