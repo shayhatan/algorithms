@@ -6,6 +6,8 @@
 
 const int NOT_FOUND = -1;
 
+//avg complexity O(N+M)
+//complexity O(NM)
 int search(char *str, char *pattern) {
     int m = strlen(pattern) + 1;
     int n = strlen(str) + 1;

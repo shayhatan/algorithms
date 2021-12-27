@@ -7,6 +7,7 @@
 using namespace std;
 const int NOT_FOUND = -1;
 
+//complexity O(N*M)
 int search(char *pattern, char *text) {
     size_t m = strlen(pattern);
     size_t n = strlen(text);
