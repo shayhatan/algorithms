@@ -1,11 +1,11 @@
 ##Algorithms 
 ####
-* understand substring search algorithms (Rabin-Karp, Knuth-Morris-Pratt and Z algorithms)
+* Substring search algorithms (Rabin-Karp, Knuth-Morris-Pratt and Z algorithms)
 ####
-* understand graph algorithms (BFS, DFS),
+* Graph algorithms (BFS, DFS),
 #####
-* understand shortest path problem (Dijkstra's, Bellman-Ford algorithm)
+* Shortest path problem (Dijkstra's, Bellman-Ford algorithm)
 ####
-* understand sorting algorithms approaches 
+* Sorting algorithms  
 
 Most files contain informative document.
