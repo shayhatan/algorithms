@@ -4,9 +4,12 @@
 
 #include "DepthFirstSearch.h"
 
+DepthFirstSearch::DepthFirstSearch(std::vector<Vertex *> &_vertex_list) : vertex_list(_vertex_list) {}
+
 void DepthFirstSearch::operator()() {
     for (auto vertex : vertex_list) {
         if (!vertex->isVisited()) {
+            vertex->setVisited(true);
             dfs(vertex);
         }
     }
@@ -14,18 +17,18 @@ void DepthFirstSearch::operator()() {
 }
 
 void DepthFirstSearch::dfs(Vertex *vertex) {
-    //we visit given vertex
+
+    // we visit given vertex
     std::cout << *vertex << std::endl;
-    //visit the neighbors
+
+    // visit the neighbors
     for (Vertex *v : vertex->getNeighbours()) {
         if (!v->isVisited()) {
             v->setVisited(true);
+
             // instead of using the STL : "Stack", we use the actual stack with recursion
             dfs(v);
         }
     }
 }
 
-DepthFirstSearch::DepthFirstSearch(std::vector<Vertex *> &_vertex_list) : vertex_list(_vertex_list) {
-
-}
