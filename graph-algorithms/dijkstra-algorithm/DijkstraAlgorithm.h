@@ -8,6 +8,10 @@
 #include "Vertex.h"
 #include "Edge.h"
 
+// Dijkstra's Shortest Path -
+// could preform Fibonacci heap in Complexity of - Time: O(V log(V)), Space: O(V)
+//### Can not calculate if there is a negative weight!
+
 class DijkstraAlgorithm {
 public:
     void computePaths(std::shared_ptr<Vertex> source_vertex);
